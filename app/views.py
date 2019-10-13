@@ -11,9 +11,9 @@ def index():
   View root page that returns the index page and its data
   '''
 
-  message = 'Hello World'
+  title = 'Home - Welcome to the best news app'
 
-  return render_template('index.html',message = message)
+  return render_template('index.html',title = title)
 
 
 @app.route('/news/<int:news_id>')
