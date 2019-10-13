@@ -4,12 +4,12 @@ class News:
   News class to define News Objects
   '''
 
-  def __init__(self,author,title,description,url,urlToImage,publishedAt,content):
+  def __init__(self,id,name,description,url,category,language,country):
 
-    self.author = author
-    self.title = title
+    self.id =id
+    self.name = name
     self.description = description
     self.url = url
-    self.urlToImage = 'https://static.politico.com/8f/41/eaa45a8e4aa7819748b65d8ce6ca/191012-joe-biden-gty-773.jpg'
-    self.publishedAt = publishedAt
-    self.content = content
+    self.category = category
+    self.language = language
+    self.country = country
