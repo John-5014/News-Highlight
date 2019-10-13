@@ -10,6 +10,15 @@
   {% endif %}
 </head>
 <body>
+
+  <!-- Articles section -->
+
+  <h3> News Sources</h3>
+  <ul>
+    {% for articles_news in articles %}
+    <li>{{ articles_news.name}}</li>
+    {% endfor %}
+  </ul>
   
 </body>
 </html>
