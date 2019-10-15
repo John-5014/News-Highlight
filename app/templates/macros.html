@@ -1,7 +1,42 @@
 {% macro displayNewsList(news_list) %}
 
 {% for news in news_list %}
-<li>{{ news.name}}</li>
+
+<section class="details-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-content">
+                    <div class="card-img">
+                        <!-- <img src="https://placeimg.com/380/230/nature" alt=""> -->
+                        
+                    </div>
+                    <div class="card-desc">
+                        <h2 style="font-family:fantasy;">{{ news.name| truncate(100)}}</h2>
+                        <p style="font-size:18px; font-family: sans-serif;">{{ news.description| truncate(60)}}</p>
+                        
+                            <a href="/news/{{news.id}}" class="btn-card"><button>Read Articles</button></a>   
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+    <!-- <div class="container-fluid">
+
+        <li class="text-center">
+            <h2>{{ news.description }}</h2>
+          <p class="text-center"> {{ news.name| truncate(100)}}</p>
+            <a href="/news/{{news.id}}">
+              <button>Read Articles</button></a></li>
+
+      
+      
+    </div> -->
+
 
 {% endfor %}
 
