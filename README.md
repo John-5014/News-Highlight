@@ -7,6 +7,8 @@
 ### View Live Site here
 
         To use this application, visit the live application link at: https://news-highlight01.herokuapp.com/
+
+        Enjoy the application.
         
 
 ## User Stories
